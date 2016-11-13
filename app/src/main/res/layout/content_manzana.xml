@@ -41,5 +41,4 @@
         android:layout_centerHorizontal="true"
         android:width="250dp" />
 
-    <!--- Esta línea nos sirve para no crear un Listener en Manzana.java -->
 </RelativeLayout>

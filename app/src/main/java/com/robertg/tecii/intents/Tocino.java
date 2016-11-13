@@ -6,11 +6,8 @@ import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
-import android.content.Intent;  // Se importan ambas últimas librerías para poder realizar el intent.
-import android.view.View;  // Se importan ambas últimas librerías para poder realizar el intent.
-import android.widget.TextView; // Este nos servirá para colocar el mensaje enviado al Texto en la actividad "Tocino".
-
-import org.w3c.dom.Text;
+import android.content.Intent;
+import android.widget.TextView;
 
 public class Tocino extends AppCompatActivity {
 
@@ -19,10 +16,10 @@ public class Tocino extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tocino);
 
-        Bundle InfoManzanas = getIntent().getExtras(); // Con este método se obtienen los extras mandados de la actividad anterior.
+        Bundle InfoManzanas = getIntent().getExtras();
         if (InfoManzanas==null)
         {
-            return;     // Con esta condición delimitamos el envío de información desde otro recurso. Ej, otra actividad.
+            return;
         }
 
         String MensajeManzana = InfoManzanas.getString("MensajeManzana");
@@ -43,15 +40,11 @@ public class Tocino extends AppCompatActivity {
 
 
         });
-
-
     }
 
-    public void onClick(View view){  // El método onClick para brincar al otro Intent.
+    public void onClick(View view){
 
         Intent i = new Intent(this, Manzana.class);
         startActivity(i);
-
     }
-
 }

@@ -31,5 +31,6 @@
         android:layout_below="@+id/txtTocino"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="97dp"
-        android:onClick="onClick"/> <!--- Esta línea nos sirve para no crear un Listener en Tocino.java -->/>
+        android:onClick="onClick"/>
+
 </RelativeLayout>
